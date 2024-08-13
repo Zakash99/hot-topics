@@ -1,0 +1,474 @@
+/* 
+
+Color pallet hex:
+
+#000000
+#ffffff
+#A5A5A5 
+--------
+Black 
+White 
+Grey
+
+*/
+
+/* Google Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Desktop View > 80rem */
+
+.container {
+    max-width: 1500px;
+    padding: 0 40px;
+    padding-left: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Header Section */
+
+header #navbar {
+    padding-left: 100px;
+}
+
+.header-section button:hover {
+    background: black;
+    color: white;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section button {
+    display: none;
+}
+
+.header-section button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.header-section ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.header-section ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    background: black;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 10px 50px;
+    display: block;
+}
+
+.header-section button {
+    background: transparent;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+}
+
+.header-section ul li a:hover,
+.header-section ul li a.active {
+    background: rgb(165, 165, 165);
+    color: black;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Banner Section */
+
+#banner .banner-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    overflow: unset;
+    overflow-clip-margin: unset;
+}
+
+.banner-section {
+    overflow: hidden;
+}
+
+/* Body Section */
+
+h2.article-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+    font-family: serif;
+}
+
+.value-section {
+    margin-top: 80px;
+}
+
+.value-section .home-section-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.value-section .home-section-info {
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+
+.value-section .home-section-info .section-paragraph {
+    width: calc(100% - 400px);
+}
+
+.value-section .home-section-info figure {
+    width: 400px;
+}
+
+.value-section .home-section-info figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.section-paragraph p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.last-child .home-section-info {
+    border-bottom: none;
+}
+
+/* Footer Section */
+
+footer {
+    background: black;
+    padding: 50px 0;
+}
+
+.footer-section h2 {
+    font-size: 40px;
+    text-transform: bold;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+/* I can only share 3 social links */
+footer .social-links {  
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-right: 60px;
+}
+
+
+/* Portfolio Section */
+
+#portfolio-section {
+    margin-top: 80px;
+}
+
+#portfolio-section .article-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: start;
+    color: black;
+}
+
+#portfolio-section  .container {
+    padding-left: 90px;
+}
+
+#portfolio-section .portfolio-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#portfolio-section .portfolio-section .card figure{
+    text-align: center;
+}
+
+#portfolio-section .portfolio-section .card figure img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#portfolio-section .portfolio-section .card {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+#portfolio-section .portfolio-section .card p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Tablet View */
+
+@media (max-width:80rem) {
+
+/* Header Section */
+
+    .header-section {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    header #navbar {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .header-section ul {
+        width: 100%;
+    }
+
+    .header-section ul li {
+        width: 48%;
+        text-align: center;
+    }
+
+    .header-section ul li a {
+        padding: 4px 12px;
+    }
+
+    .header-section ul li a {
+        padding: 10px 10px;
+    }
+
+/* Body Section */
+
+    .container {
+        padding-left: 40px;
+    }
+
+    .container p {
+        line-height: 1.4;
+        font-size: 1rem;
+    }
+
+    #portfolio-section .article-title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #portfolio-section {
+        margin-top: 50px;
+    }
+
+    #portfolio-section .portfolio-section .card {
+        width: 48%;
+    }
+
+    .value-section .home-section-info {
+        display: block;
+    }
+
+    .value-section .home-section-info figure {
+        width: 40%;
+        margin-bottom: 20px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .value-section .home-section-info .section-paragraph {
+        width: 100%;
+    }
+
+    .value-section {
+        margin-top: 40px;
+    }
+
+/* Footer Section */
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer-section p {
+        font-size: 18px;
+    }
+
+    footer .social-links {  
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        padding-left: 100px;
+    }
+}
+
+/* Mobile View */
+
+@media (max-width: 35rem) {
+
+/* Header Section */
+
+    .header-section button {
+        display: flex;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .header-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-section ul {
+        min-width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .header-section ul li {
+        margin-bottom: 10px;
+    }
+
+    .header-section ul li a {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .header-section ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-section button {
+        width: 10%;
+    }
+
+    ul.active {
+        display: block;
+    }
+
+/* Body Section */
+
+    .container {
+        max-width: 1500px;
+        padding: 0 20px;
+    }
+
+    .container p {
+        line-height: 1.4;
+        font-size: 0.75rem;
+    }
+
+    #banner .banner-section img {
+        height: 150px;
+    }
+
+    h2.article-title {
+        font-size: 30px;
+    }
+
+    .section-paragraph p {
+        margin-bottom: 20px;
+    }
+
+    #portfolio-section  .container {
+        padding-left: 15px;
+    }
+
+    #portfolio-section .article-title {
+        font-size: 30px;
+    }
+
+    #portfolio-section .portfolio-section .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .value-section .home-section-info figure {
+        width: 100%;
+        margin-right: 0;
+    }
+
+/* Footer Section */
+
+    .footer-section h2 {
+        font-size: 30px;
+    }
+
+    .footer-section p {
+        font-size: 16px;
+    }
+
+    footer .social-links {  
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        padding-right: 100px;
+    }
+}
